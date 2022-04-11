@@ -22,10 +22,9 @@ class TaskRepositoryTest {
     Task task = new Task();
     @Test
     void anything() {
-        task.setName("Read Agile");
-        task.setId(1);
-        task.setDescription("Should complete week one of Agile principles and methodology");
-        task.setStatus(Status.DONE);
+        task.setName("Assessment");
+        task.setDescription("Should read for assessment");
+        task.setStatus(Status.PENDING);
 
         taskRepo.save(task);
     }
